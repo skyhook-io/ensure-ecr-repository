@@ -1,0 +1,12 @@
+{
+  "dependencies": {},
+  "npm": null,
+  "runner_tools": "Existing runner binaries and consumer build inputs are not snapshotted.",
+  "snapshot": "5b401fd9e371ef281591",
+  "source": {
+    "ref": "v1",
+    "repository": "skyhook-io/ensure-ecr-repository",
+    "sha": "9840b812da6c42ff3af35b065f0c6751a7ef13d6"
+  },
+  "tools": {}
+}
