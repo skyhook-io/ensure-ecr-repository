@@ -116,23 +116,12 @@ This action requires AWS credentials to be configured. You can use:
 
 ### Required AWS Permissions
 
-The AWS credentials must have the following permissions:
+The AWS credentials must have the following IAM permissions:
 
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "ecr:DescribeRepositories",
-        "ecr:CreateRepository"
-      ],
-      "Resource": "*"
-    }
-  ]
-}
-```
+- `ecr:DescribeRepositories` - to check if the repository exists
+- `ecr:CreateRepository` - to create the repository if it doesn't exist
+
+For detailed information about setting up AWS permissions with OIDC and IAM roles, see [AWS_PERMISSIONS.md](AWS_PERMISSIONS.md).
 
 ## Error Handling
 

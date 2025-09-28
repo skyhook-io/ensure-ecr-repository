@@ -8,7 +8,7 @@ branding:
 
 inputs:
   repository-name:
-    description: "The name of the ECR repository to ensure exists"
+    description: "The name(s) of ECR repositories to ensure exist (comma-separated for multiple)"
     required: true
   aws-region:
     description: "The AWS region where the ECR repository should exist"
@@ -59,6 +59,7 @@ runs:
         elif [[ $repo_result == *"AccessDeniedException"* ]]; then
           # Access denied
           echo "❌ Access denied to describe ECR repository. Check your AWS permissions."
+          echo "📖 See required permissions: https://github.com/KoalaOps/ensure-ecr-repository/blob/main/AWS_PERMISSIONS.md"
           exit 1
         elif [[ $repo_result == *"repositories"* ]]; then
           # Success response contains "repositories" - repo exists
