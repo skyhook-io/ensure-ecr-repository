@@ -1,6 +1,6 @@
 name: "Ensure ECR Repository Exists"
 description: "Ensures an Amazon ECR repository exists, creating it if necessary. Requires AWS credentials to be configured."
-author: "KoalaOps"
+author: "Skyhook"
 
 branding:
   icon: "package"

@@ -16,7 +16,7 @@ A GitHub Action that ensures an Amazon ECR repository exists, creating it if nec
 
 ```yaml
 - name: Ensure ECR Repository Exists
-  uses: KoalaOps/ensure-ecr-repository@v1
+  uses: skyhook-io/ensure-ecr-repository@v1
   with:
     repository-name: my-app
     aws-region: us-east-1
@@ -47,7 +47,7 @@ jobs:
 
       - name: Ensure ECR Repository Exists
         id: ecr-repo
-        uses: KoalaOps/ensure-ecr-repository@v1
+        uses: skyhook-io/ensure-ecr-repository@v1
         with:
           repository-name: my-app
           aws-region: us-east-1
@@ -66,7 +66,7 @@ jobs:
 ```yaml
 - name: Ensure ECR Repository Exists
   id: ensure-repo
-  uses: KoalaOps/ensure-ecr-repository@v1
+  uses: skyhook-io/ensure-ecr-repository@v1
   with:
     repository-name: my-service
     aws-region: us-west-2
@@ -176,8 +176,8 @@ Error: Repository does not exist for repository with name 'my-app'
 ## Contributing
 
 We welcome contributions! Feel free to:
-- 🐛 **Report bugs** by [creating an issue](https://github.com/KoalaOps/ensure-ecr-repository/issues)
-- 💡 **Suggest features** by [creating an issue](https://github.com/KoalaOps/ensure-ecr-repository/issues)  
+- 🐛 **Report bugs** by [creating an issue](https://github.com/skyhook-io/ensure-ecr-repository/issues)
+- 💡 **Suggest features** by [creating an issue](https://github.com/skyhook-io/ensure-ecr-repository/issues)  
 - 🛠️ **Submit pull requests** with improvements or fixes
 
 No special process required - just fork, make your changes, and submit a PR!
@@ -188,8 +188,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 🐛 **Bug reports**: [Create an issue](https://github.com/KoalaOps/ensure-ecr-repository/issues)
-- 💡 **Feature requests**: [Create an issue](https://github.com/KoalaOps/ensure-ecr-repository/issues)
+- 🐛 **Bug reports**: [Create an issue](https://github.com/skyhook-io/ensure-ecr-repository/issues)
+- 💡 **Feature requests**: [Create an issue](https://github.com/skyhook-io/ensure-ecr-repository/issues)
 
 ---
 
