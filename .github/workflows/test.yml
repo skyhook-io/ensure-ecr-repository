@@ -20,7 +20,7 @@ jobs:
   test-action:
     runs-on: ubuntu-latest
     # Only run if AWS credentials are available (will be skipped in forks)
-    if: ${{ github.repository == 'KoalaOps/ensure-ecr-repository' }}
+    if: ${{ github.repository == 'skyhook-io/ensure-ecr-repository' }}
     
     steps:
       - name: Checkout
