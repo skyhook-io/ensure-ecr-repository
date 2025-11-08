@@ -1,4 +1,4 @@
-name: "Ensure ECR Repository Exists"
+name: "Skyhook Ensure ECR Repository"
 description: "Ensures an Amazon ECR repository exists, creating it if necessary. Requires AWS credentials to be configured."
 author: "Skyhook"
 
